@@ -1,0 +1,10 @@
+*{
+  text-align: center;
+}
+textarea {
+   resize: none;
+}
+.offset_input{
+  width: 40px;
+  /* -webkit-appearance: none; */
+}
