@@ -6,14 +6,18 @@ window.cipher = {
 };
 //encoda msg, desloc
 function encode(message, offset){
-  let charCodesMessage = [];
+  let charCodesMessage = "";
   for (var index = 0; index < message.length; ++index) {
-    charCodesMessage.push(message.charCodeAt(index)+offset);
+    charCodesMessage += String.fromCharCode(message.charCodeAt(index)+offset);
   }
-  return charCodesMessage.toString();
+  return charCodesMessage;
 }
 
 //desencoda msg, desloc
 function decode(message, offset) {
-
+  // let charCodesMessage = "";
+  // for (var index = 0; index < message.length; ++index) {
+  //   charCodesMessage += String.fromCharCode(message.charCodeAt(index)-offset);
+  // }
+  // return charCodesMessage;
 }

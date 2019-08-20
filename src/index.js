@@ -8,16 +8,18 @@ function encodeChoice(){
   let message = document.getElementById('text').value;
   let offset = parseInt(document.getElementById('offset').value);
   let answer = window.cipher.encode(message, offset);
-  document.getElementById("text-answer").innerHTML = String.fromCharCode(message.charCodeAt() + offset) + String.fromCharCode(answer);
+  document.getElementById("text-answer").innerHTML = answer;
   console.log(answer);
   return
 }
 
 function decodeChoice() {
-  let message = document.getElementById('text').value;
-  let offset = parseInt(document.getElementById('offset').value);
-  let answer = window.cipher.encode(message, offset);
-  document.getElementById("text-answer").innerText = String.fromCharCode(message.charCodeAt() - offset)
+//   let message = document.getElementById('text').value;
+//   let offset = parseInt(document.getElementById('offset').value);
+//   let answer = window.cipher.decode(message, offset);
+//   document.getElementById("text-answer").innerHTML = answer;
+//   console.log(answer);
+//   return
 }
 
 //charCodeAt i roda ++i
