@@ -1,13 +1,19 @@
 //arquivo para funcoes de cifrar e decifrar
+//apenas a cifra
 window.cipher = {
   encode: encode,
   decode: decode
 };
-
-function encode(offset, string){
-
+//encoda msg, desloc
+function encode(message, offset){
+  let charCodesMessage = [];
+  for (var index = 0; index < message.length; ++index) {
+    charCodesMessage.push(message.charCodeAt(index)+offset);
+  }
+  return charCodesMessage.toString();
 }
 
-function decode(offset, string) {
+//desencoda msg, desloc
+function decode(message, offset) {
 
 }

@@ -11,24 +11,17 @@
     </header>
     <main>
       <form>
-        <div class="offset">
+        <section class="offset">
           <p>Insira sua chave:</p>
-          <input type="number" name="offset" id="offset" class="offset_input" min="1">
-          <!-- <button type="button" name="offset_enter" id="offset_enter" class="offset_enter">OK</button> -->
-        </div>
-        <div id="encode" name="encode" class="encode">
+          <input type="number" name="offset" id="offset" class="offset_input" min="1" required>
+        </section>
+        <section id="encode" name="encode" class="encode">
           <h3>Codificar Mensagem</h3>
-          <textarea name="encode_text" id="encode_text" rows="8" cols="40" placeholder="insira sua mensagem"></textarea>
-          <textarea name="encode_text_answer" id="encode_text_answer" rows="8" cols="40" placeholder="sua mensagem cifrada" readonly></textarea>
-          <p><button type="button" name="encode_button" id="encode_button" onclick="encode();">Codificar</button></p>
-          <p><button type="button" name="decode_button" id="decode_button" onclick="decode();">Decodificar</button></p>
-        </div>
-        <!-- <div id="decode" name="decode" class="decode">
-          <h3>Decodificar Mensagem</h3>
-          <textarea name="decode_text" id="decode_text" rows="8" cols="40" placeholder="insira sua mensagem"></textarea>
-          <textarea name="decode_text_answer" id="decode_text_answer" rows="8" cols="40" placeholder="sua mensagem decifrada" readonly></textarea>
-          <p><button type="button" name="decode_button" id="decode_button" onclick="decode();">Decodificar</button></p>
-        </div> -->
+          <textarea name="text" id="text" rows="8" cols="40" placeholder="insira sua mensagem"></textarea>
+          <textarea name="text-answer" id="text-answer" rows="8" cols="40" placeholder="sua resposta" readonly></textarea>
+          <p><button type="button" name="encode_button" id="encode_button" onclick="encodeChoice();">Codificar</button>
+          <button type="button" name="decode_button" id="decode_button" onclick="decode();">Decodificar</button></p>
+        </section>
       </form>
     </main>
     <script src="cipher.js"></script>
