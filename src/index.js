@@ -3,6 +3,8 @@
 //  ex como chamar a funcao do cipher.js=
 //   window.cipher.encode();
 // }
+document.getElementById('encode-button').addEventListener("click", encodeChoice);
+document.getElementById('decode-button').addEventListener("click", decodeChoice);
 
 function encodeChoice(){
   let message = document.getElementById('text').value;

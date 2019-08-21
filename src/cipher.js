@@ -1,5 +1,3 @@
-//arquivo para funcoes de cifrar e decifrar
-//apenas a cifra
 window.cipher = {
   encode: encode,
   decode: decode,
