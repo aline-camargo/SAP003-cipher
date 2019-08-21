@@ -8,7 +8,7 @@ window.cipher = {
 function encode(message, offset){
   let charCodesMessage = "";
   for (var index = 0; index < message.length; ++index) {
-    charCodesMessage += String.fromCharCode(message.charCodeAt(index)+offset);
+    charCodesMessage += String.fromCharCode(((message.charCodeAt(index)-65 + offset)%26) + 65);
   }
   return charCodesMessage;
 }
