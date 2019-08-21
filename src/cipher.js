@@ -2,22 +2,22 @@
 //apenas a cifra
 window.cipher = {
   encode: encode,
-  decode: decode
+  decode: decode,
 };
 //encoda msg, desloc
 function encode(message, offset){
-  let charCodesMessage = "";
+  let answerEncode = "";
   for (var index = 0; index < message.length; ++index) {
-    charCodesMessage += String.fromCharCode(((message.charCodeAt(index)-65 + offset)%26) + 65);
+    answerEncode += String.fromCharCode(((message.charCodeAt(index)-65 + offset)%26) + 65);
   }
-  return charCodesMessage;
+  return answerEncode;
 }
 
 //desencoda msg, desloc
 function decode(message, offset) {
-  // let charCodesMessage = "";
-  // for (var index = 0; index < message.length; ++index) {
-  //   charCodesMessage += String.fromCharCode(message.charCodeAt(index)-offset);
-  // }
-  // return charCodesMessage;
+  let answer = "";
+  for (var index = 0; index < message.length; ++index) {
+    answer += String.fromCharCode(((message.charCodeAt(index)-90 - offset)%26) + 90);
+  }
+  return answer;
 }

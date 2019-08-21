@@ -9,17 +9,13 @@ function encodeChoice(){
   let offset = parseInt(document.getElementById('offset').value);
   let answer = window.cipher.encode(message, offset);
   document.getElementById("text-answer").innerHTML = answer;
-  console.log(answer);
   return
 }
 
 function decodeChoice() {
-//   let message = document.getElementById('text').value;
-//   let offset = parseInt(document.getElementById('offset').value);
-//   let answer = window.cipher.decode(message, offset);
-//   document.getElementById("text-answer").innerHTML = answer;
-//   console.log(answer);
-//   return
+  let message = document.getElementById('text').value;
+  let offset = parseInt(document.getElementById('offset').value);
+  let answer = window.cipher.decode(message, offset);
+  document.getElementById("text-answer").innerHTML = answer;
+  return
 }
-
-//charCodeAt i roda ++i
