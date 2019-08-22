@@ -5,9 +5,10 @@ body {
   background-image: url(top-secret.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left top;
+  background-position: top left;
   background-size: 631px 310.5px;
   background-color: #DBBE92;
+  transform-background: rotate(45deg);
 }
 textarea {
    resize: none;

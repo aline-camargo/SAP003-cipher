@@ -1,23 +1,31 @@
-// arquivo para lidar com eventos do DOM (botoes e etc)
-// function clickAqui() {
-//  ex como chamar a funcao do cipher.js=
-//   window.cipher.encode();
-// }
+// Arquivo para lidar com eventos do DOM (botões e etc)
+
+//Escutar botões de Codificar ou Decodificar e chamar suas respectivas funções.
 document.getElementById('encode-button').addEventListener("click", encodeChoice);
 document.getElementById('decode-button').addEventListener("click", decodeChoice);
 
+// Define as variáveis de mensagem e offset (chave de deslocamento) p/ serem usadas na cifra,
+// verifica se o valor do offset é negativo e corrige se for,
+// chama a função de cifrar a mensagem e imprime a resposta no DOM.
 function encodeChoice(){
   let message = document.getElementById('text').value;
   let offset = parseInt(document.getElementById('offset').value);
-  let answer = window.cipher.encode(message, offset);
-  document.getElementById("text-answer").innerHTML = answer;
+    if (offset < 0) {
+      offset *= -1;
+    }
+  document.getElementById("text-answer").innerHTML = window.cipher.encode(message, offset);
   return
 }
 
+// Define as variáveis de mensagem e offset (chave de deslocamento) p/ serem usadas na cifra,
+// verifica se o valor do offset é negativo e corrige se for,
+// chama a função de decifrar a mensagem e imprime a resposta no DOM.
 function decodeChoice() {
   let message = document.getElementById('text').value;
   let offset = parseInt(document.getElementById('offset').value);
-  let answer = window.cipher.decode(message, offset);
-  document.getElementById("text-answer").innerHTML = answer;
+    if (offset < 0) {
+      offset *= -1;
+    }
+  document.getElementById("text-answer").innerHTML = window.cipher.decode(message, offset);
   return
 }
