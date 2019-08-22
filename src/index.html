@@ -4,25 +4,30 @@
     <meta charset="utf-8">
     <title>Ceasar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Black+Ops+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Códigos Para Informação</h1>
+      <h1>Canal de Comunicação Segura</h1>
     </header>
     <main>
       <form>
         <section class="offset">
-          <p>Insira sua chave:</p>
-          <input type="number" name="offset" id="offset" class="offset_input" min="1" required>
+          <h3 class="offset_title">Insira sua chave</h3>
+          <input type="number" name="offset" id="offset" class="offset_input" min="1" value="1">
         </section>
         <section id="encode" name="encode" class="encode">
-          <h3>Codificar Mensagem</h3>
-          <textarea name="text" id="text" rows="8" cols="40" placeholder="insira sua mensagem"></textarea>
-          <textarea name="text-answer" id="text-answer" rows="8" cols="40" placeholder="sua resposta" readonly></textarea>
-          <p><button type="button" name="encode_button" id="encode-button">Codificar</button>
-          <button type="button" name="decode_button" id="decode-button">Decodificar</button></p>
+          <h3 class="encode_title">Mensagem Secreta</h3>
+          <textarea name="text" id="text" rows="5" cols="20" placeholder="insira sua mensagem"></textarea>
+          <textarea name="text-answer" id="text-answer" rows="5" cols="20" placeholder="sua resposta" readonly></textarea>
+          <p><button type="button" name="encode-button" id="encode-button" class="button_encode">Codificar</button>
+          <button type="button" name="decode-button" id="decode-button" class="button_decode">Decodificar</button></p>
         </section>
+        <input type="submit" name="" value="ESCONDER" class="button_help">
       </form>
+      <div class="">
+        <a class="button_help" href="https://pt.wikipedia.org/wiki/Lassie">ESCONDER</a>
+      </div>
     </main>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

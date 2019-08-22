@@ -1,10 +1,75 @@
 *{
   text-align: center;
 }
+body {
+  background-image: url(top-secret.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 631px 310.5px;
+  background-color: #DBBE92;
+}
 textarea {
    resize: none;
+   text-align: left;
+   font-family: 'Arvo', serif;
+   border: solid #AD2F1F;
+}
+h1, h3{
+  display: table;
+  border: ridge black;
+  border-radius: 50px;
+  background-color: #24416d;
+  color: white;
+  margin: 50px auto;
+  border-spacing: 10px 5px;
+  font-family: 'Black Ops One', cursive;
+}
+.encode_title{
+  margin-bottom: 5px;
+}
+.offset_title{
+  margin-bottom: 5px;
 }
 .offset_input{
-  width: 40px;
-  /* -webkit-appearance: none; */
+  width: 80px;
+  height: 40px;
+  border: solid #AD2F1F;
+}
+.button_encode, .button_decode{
+  background-color: #24416d;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button_decode{
+  padding: 15px 24px;
+}
+.button_encode:hover, .button_decode:hover {
+  background-color: #AD2F1F;
+}
+.button_help{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #AD2F1F;
+  padding: 30px 64px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button_help:hover{
+  background-color: #24416d;
 }
