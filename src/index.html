@@ -8,27 +8,25 @@
   </head>
   <body>
     <header>
-      <p id="page-title" class="page_title">TOP SECRET</p>
+      <p id="header" class="header">TOP SECRET</p>
     </header>
     <main>
-      <h2 class="header">Canal de Comunicação Segura</h2>
+      <h2 class="page_title">Canal de Comunicação Segura</h2>
       <form>
         <section id="encode" name="encode" class="encode">
           <h3 class="encode_title">Mensagem Secreta</h3>
-          <textarea name="text" id="text" placeholder="insira sua mensagem"></textarea>
-          <textarea name="text-answer" id="text-answer" placeholder="sua resposta" readonly></textarea>
+          <textarea name="text-input" id="text-input" placeholder="insira sua mensagem" class="text_input"></textarea>
+          <textarea name="text-answer" id="text-answer" placeholder="sua resposta" class="text_answer" readonly></textarea>
         </section>
         <section class="offset">
           <h3 class="offset_title">Chave:</h3>
           <input type="number" name="offset" id="offset" class="offset_input" value="1">
-        <!-- </section>
-        <section class="buttons"> -->
           <button type="button" name="encode-button" id="encode-button" class="button_encode">Codificar</button>
           <button type="button" name="decode-button" id="decode-button" class="button_decode">Decodificar</button>
         </section>
       </form>
       <div class="">
-        <a class="button_help" href="https://pt.wikipedia.org/wiki/Led_Zeppelin">ESCONDER</a>
+        <a class="button_help" href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria">ESCONDER</a>
       </div>
     </main>
     <script src="cipher.js"></script>
