@@ -4,26 +4,28 @@
     <meta charset="utf-8">
     <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Black+Ops+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Montserrat+Alternates:500,700|Montserrat:800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Canal de Comunicação Segura</h1>
+      <p id="page-title" class="page_title">TOP SECRET</p>
     </header>
     <main>
+      <h2 class="header">Canal de Comunicação Segura</h2>
       <form>
-        <section class="offset">
-          <h3 class="offset_title">Insira sua chave</h3>
-          <input type="number" name="offset" id="offset" class="offset_input" value="1">
-        </section>
         <section id="encode" name="encode" class="encode">
           <h3 class="encode_title">Mensagem Secreta</h3>
-          <textarea name="text" id="text" rows="5" cols="20" placeholder="insira sua mensagem"></textarea>
-          <textarea name="text-answer" id="text-answer" rows="5" cols="20" placeholder="sua resposta" readonly></textarea>
-          <p><button type="button" name="encode-button" id="encode-button" class="button_encode">Codificar</button>
-          <button type="button" name="decode-button" id="decode-button" class="button_decode">Decodificar</button></p>
+          <textarea name="text" id="text" placeholder="insira sua mensagem"></textarea>
+          <textarea name="text-answer" id="text-answer" placeholder="sua resposta" readonly></textarea>
         </section>
-        <input type="submit" name="" value="ESCONDER" class="button_help">
+        <section class="offset">
+          <h3 class="offset_title">Chave:</h3>
+          <input type="number" name="offset" id="offset" class="offset_input" value="1">
+        <!-- </section>
+        <section class="buttons"> -->
+          <button type="button" name="encode-button" id="encode-button" class="button_encode">Codificar</button>
+          <button type="button" name="decode-button" id="decode-button" class="button_decode">Decodificar</button>
+        </section>
       </form>
       <div class="">
         <a class="button_help" href="https://pt.wikipedia.org/wiki/Led_Zeppelin">ESCONDER</a>

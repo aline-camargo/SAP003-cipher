@@ -1,62 +1,109 @@
 *{
   text-align: center;
+  box-sizing: border-box;
 }
 body {
-  background-image: url(top-secret.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top left;
-  background-size: 631px 310.5px;
   background-color: #DBBE92;
-  transform-background: rotate(45deg);
+}
+.page_title{
+  color: #AD2F1F;
+  font-size: 64px;
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-top: solid #AD2F1F;
+  border-bottom: solid #AD2F1F;
+  border-width: 15px;
+  font-family: 'Black Ops One', cursive;
+
 }
 textarea {
    resize: none;
    text-align: left;
-   font-family: 'Arvo', serif;
    border: solid #AD2F1F;
+   width: 300px;
+   height: 250px;
+   display: inline;
+   margin: 5px auto;
 }
-h1, h3{
-  display: table;
-  border: ridge black;
+#text{
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#text-answer{
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #DEB77B;
+}
+.header{
+  color: #24416d;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.encode_title{
+  width: 220px;
+  height: 40px;
+  padding: 8px 8px;
+  border: none;
   border-radius: 50px;
   background-color: #24416d;
   color: white;
-  margin: 50px auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  box-shadow: 3px 3px 2px grey;
+  margin: 20px auto 2px;
   border-spacing: 10px 5px;
-  font-family: 'Black Ops One', cursive;
-}
-.encode_title{
-  margin-bottom: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 .offset_title{
-  margin-bottom: 5px;
+  width: 190px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #24416d;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  box-shadow: 3px 3px 2px grey;
+  border-spacing: 10px 5px;
+  display: inline;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 .offset_input{
-  width: 80px;
+  width: 50px;
   height: 40px;
   border: solid #AD2F1F;
+  border-radius: 50px;
+  margin: 10px 204px 0 6px;
+  display: inline;
 }
 .button_encode, .button_decode{
-  background-color: #24416d;
+  background-color: #AD2F1F;
   border: none;
   border-radius: 50px;
   color: white;
-  padding: 15px 32px;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
   transition-duration: 0.4s;
+  display: inline;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 .button_decode{
-  padding: 15px 24px;
+  padding: 7px 14px;
+  display: inline;
 }
 .button_encode:hover, .button_decode:hover {
-  background-color: #AD2F1F;
+  background-color: #24416d;
 }
 .button_help{
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 10px;
   background-color: #AD2F1F;
@@ -70,6 +117,7 @@ h1, h3{
   font-weight: bold;
   cursor: pointer;
   transition-duration: 0.4s;
+  font-family: 'Montserrat', sans-serif;
 }
 .button_help:hover{
   background-color: #24416d;
