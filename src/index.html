@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Cesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Montserrat+Alternates:500,700|Montserrat:800&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <title>Top Secret Códigos</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Montserrat+Alternates:500,700|Montserrat:800&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <header>
-      <p id="header" class="header">TOP SECRET</p>
+      <p id="header" class="header">TOP SECRET Códigos</p>
     </header>
     <main>
-      <h2 class="page_title">Canal de Comunicação Segura</h2>
+      <h2 class="page_title">Facilitador de Comunicação Segura</h2>
       <form>
-        <section id="encode" name="encode" class="encode">
-          <h3 class="encode_title">Mensagem Secreta</h3>
-          <textarea name="text-input" id="text-input" placeholder="insira sua mensagem" class="text_input"></textarea>
-          <textarea name="text-answer" id="text-answer" placeholder="sua resposta" class="text_answer" readonly></textarea>
-        </section>
-        <section class="offset">
-          <h3 class="offset_title">Chave:</h3>
-          <input type="number" name="offset" id="offset" class="offset_input" value="1">
-          <button type="button" name="encode-button" id="encode-button" class="button_encode">Codificar</button>
-          <button type="button" name="decode-button" id="decode-button" class="button_decode">Decodificar</button>
-        </section>
+          <section>
+            <h3 class="subtitle encode">Mensagem Secreta</h3>
+            <textarea name="text-input" id="text-input" placeholder="insira sua mensagem" class="text_input"></textarea>
+            <textarea name="text-answer" id="text-answer" placeholder="sua resposta" class="text_answer" readonly></textarea>
+          </section>
+          <section>
+              <h3 class="subtitle offset">Chave:</h3>
+              <input type="number" name="offset" id="offset" class="offset_input" value="1">
+              <button type="button" name="encode-button" id="encode-button" class="button_encode">Codificar</button>
+              <button type="button" name="decode-button" id="decode-button" class="button_decode">Decodificar</button>
+          </section>
       </form>
       <div class="">
         <a class="button_help" href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria">ESCONDER</a>
       </div>
     </main>
+    <footer>
+      <p>Aline Camargo - Laboratória 2019</p>
+    </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,10 +1,14 @@
+/* Estilos gerais da página. */
 *{
   text-align: center;
   box-sizing: border-box;
 }
+/* Cor de fundo da página */
 body {
   background-color: #DBBE92;
+  margin: auto 0;
 }
+/* Estilo geral dos inputs de texto. */
 textarea {
    resize: none;
    text-align: left;
@@ -15,6 +19,7 @@ textarea {
    margin: 5px auto;
    font-size: large;
 }
+/* Estilo do cabeçalho. */
 .header{
   color: #AD2F1F;
   text-shadow: 2px 2px 5px black;
@@ -27,13 +32,16 @@ textarea {
   border-width: 15px;
   font-family: 'Black Ops One', cursive;
 }
+/* Estilo do título da página. */
 .page_title{
   color: #24416d;
   text-shadow: 2px 2px 2px black;
   margin-bottom: 5px;
   font-family: 'Montserrat', sans-serif;
 }
-.encode_title, .offset_title{
+/* Estilo geral dos subtítulos. */
+/* .encode_title, .offset_title{ */
+.subtitle{
   border: none;
   border-radius: 50px;
   background-color: #24416d;
@@ -43,29 +51,34 @@ textarea {
   border-spacing: 10px 5px;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-.encode_title{
+/* Estilo específico do subtítulo dos inputs de texto. */
+.encode {
   width: 220px;
   height: 40px;
   padding: 8px 8px;
   margin: 20px auto 2px;
 }
+/* Estilo específico do input de texto em que o usuário escreve a mensagem. */
 .text_input{
   border-right: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+/* Estilo específico do input de texto em que o usuário lê sua resposta. */
 .text_answer{
   border-left: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #DEB77B;
 }
-.offset_title{
+/* Estilo específico do subtítulo do input de offset. */
+.offset{
   width: 190px;
   height: 40px;
   padding: 10px;
   display: inline;
 }
+/* Estilo do input de offset. */
 .offset_input{
   width: 50px;
   height: 40px;
@@ -74,6 +87,7 @@ textarea {
   margin: 10px 204px 0 6px;
   display: inline;
 }
+/* Estilo geral dos botões de Codificar e Decodificar. */
 .button_encode, .button_decode{
   background-color: #AD2F1F;
   border: none;
@@ -88,13 +102,16 @@ textarea {
   display: inline;
   font-family: 'Montserrat Alternates', sans-serif;
 }
+/* Estilo específico do botão de decodificar. */
 .button_decode{
   padding: 7px 14px;
   display: inline;
 }
+/* Cor dos botões antes da transição ao passar o mouse. */
 .button_encode:hover, .button_decode:hover, .button_help:hover{
   background-color: #24416d;
 }
+/* Estilo do botão de ESCONDER. */
 .button_help{
   position: fixed;
   bottom: 10px;
@@ -111,4 +128,9 @@ textarea {
   cursor: pointer;
   transition-duration: 0.4s;
   font-family: 'Montserrat', sans-serif;
+}
+footer{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 13px;
+  margin-top: 50px;
 }
