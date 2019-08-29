@@ -2,12 +2,12 @@
 
 ## Índice
 
-1. [Problema](#1.-Problema)
+* [1. Problema](#1-problema)
 2. [Como Utilizar](#2.-Como-utilizar)
 3. [Lógica da Cifra](#3.-Lógica-da-Cifra)
 4. [Interface](#4.-Interface)
 5. [Especificações Técnicas](#5.-Especificações-Técnicas)
-6. [Objetivos de aprendizagem atingidos](#6.Objetivos-de-aprendizagem-atingidos)
+* [6. Objetivos de aprendizagem atingidos](#6-objetivos-de-aprendizagem-atingidos)
 
 ## 1. Problema
 
