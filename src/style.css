@@ -40,7 +40,6 @@ textarea {
   font-family: 'Montserrat', sans-serif;
 }
 /* Estilo geral dos subtítulos. */
-/* .encode_title, .offset_title{ */
 .subtitle{
   border: none;
   border-radius: 50px;
@@ -52,7 +51,7 @@ textarea {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 /* Estilo específico do subtítulo dos inputs de texto. */
-.encode {
+.message{
   width: 220px;
   height: 40px;
   padding: 8px 8px;
@@ -84,11 +83,11 @@ textarea {
   height: 40px;
   border: solid #AD2F1F;
   border-radius: 50px;
-  margin: 10px 204px 0 6px;
+  margin: 10px 198px 0 6px;
   display: inline;
 }
 /* Estilo geral dos botões de Codificar e Decodificar. */
-.button_encode, .button_decode{
+.button{
   background-color: #AD2F1F;
   border: none;
   border-radius: 50px;
@@ -102,13 +101,8 @@ textarea {
   display: inline;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-/* Estilo específico do botão de decodificar. */
-.button_decode{
-  padding: 7px 14px;
-  display: inline;
-}
-/* Cor dos botões antes da transição ao passar o mouse. */
-.button_encode:hover, .button_decode:hover, .button_help:hover{
+/* Cor dos botões ao passar o mouse. */
+.button:hover, .button_help:hover{
   background-color: #24416d;
 }
 /* Estilo do botão de ESCONDER. */
