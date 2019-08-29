@@ -3,10 +3,10 @@
 ## Índice
 
 * [1. Problema](#1-problema)
-2. [Como Utilizar](#2.-Como-utilizar)
-3. [Lógica da Cifra](#3.-Lógica-da-Cifra)
-4. [Interface](#4.-Interface)
-5. [Especificações Técnicas](#5.-Especificações-Técnicas)
+* [2. Como Utilizar](#2-como-utilizar)
+* [3. Lógica da Cifra](#3-lógica-da-cifra)
+* [4. Interface](#4-interface)
+* [5. Especificações Técnicas](#5-especificações-técnicas)
 * [6. Objetivos de aprendizagem atingidos](#6-objetivos-de-aprendizagem-atingidos)
 
 ## 1. Problema
@@ -109,13 +109,13 @@ usuário através do navegador e a lógica para essa interação. Em outras pala
 aprendi a:
 
 * Desenhar elementos de formulário em uma tela usando **HTML** e **CSS**.
-* Permitir o usuário interagir com elementos do DOM e fazer com que a aplicação
+* Permitir o usuário interagir com elementos do DOM e fazer   com que a aplicação
   responda (cifrar/decifrar) quando ocorrer os **eventos de DOM**.
 * Manipular _strings_ (cadeias de texto).
 * Usar **controle de fluxo** (laços, condicionais, ...).
 * Atualizar a tela com os resultados (**manipular o DOM**).
 * **Implementar funções** dada uma descrição de comportamento.
-* Verificar a sua implementação com **provas unitárias**.
+* Verificar a implementação com **provas unitárias**.
 * Entender as **necessidades do usuário** e propor soluções.
-* Organizar o seu tempo e priorizar tarefas em um ambiente de **alta
+* Organizar o tempo e priorizar tarefas em um ambiente de **alta
   incerteza**.
