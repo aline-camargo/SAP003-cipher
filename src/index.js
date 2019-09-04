@@ -2,15 +2,13 @@
 
 //Função chamada quando o usuário aperta o botão de codificar.
 const encodeChoice = () => {
-  //Define as variáveis de mensagem e offset de acordo com o input do usuário.
   let message = document.getElementById("text-input").value;
   let offset = parseInt(document.getElementById("offset").value);
-  //Chama a função de codificação e retorna seu resultado.
   document.getElementById("text-answer").innerHTML = window.cipher.encode(offset, message);
   return;
 };
 
-//Função chamada quando o usuário aperta o botão de decodificar. Mesmas expressões da encodeChoice();, porém para decodificar.
+//Função chamada quando o usuário aperta o botão de decodificar.
 const decodeChoice = () => {
   let message = document.getElementById("text-input").value;
   let offset = parseInt(document.getElementById("offset").value);
