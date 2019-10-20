@@ -10,28 +10,32 @@
 
 <body>
     <header>
-      <p id="header" class="header">TOP SECRET Códigos</p>
+      <p class="header">TOP SECRET Códigos</p>
     </header>
-    <main>
-      <h2 class="page_title">Facilitador de Comunicação Segura</h2>
-      <form>
+    <main class="container">
+      <h2 class="page-title">Facilitador de Comunicação Segura</h2>
+      <form class="container">          
+            <h3 class="subtitles">Mensagem Secreta</h3>
           <section>
-            <h3 class="subtitle message">Mensagem Secreta</h3>
-            <textarea name="text-input" id="text-input" placeholder="insira sua mensagem" class="text_input"></textarea>
-            <textarea name="text-answer" id="text-answer" placeholder="sua resposta" class="text_answer" readonly></textarea>
+            <textarea id="text-input" placeholder="insira sua mensagem" class="textareas text-input"></textarea>
+            <textarea id="text-answer" placeholder="sua resposta" class="textareas text-answer" readonly></textarea>
           </section>
-          <section>
-              <h3 class="subtitle offset">Deslocamento:</h3>
-              <input type="number" name="offset" id="offset" class="offset_input" value="1">
-              <button type="button" name="encode-button" id="encode-button" class="button encode">Codificar</button>
-              <button type="button" name="decode-button" id="decode-button" class="button decode">Decodificar</button>
+          <section class="lower-form">
+            <div>
+              <label for="offset" class="subtitles">Deslocamento:</label for="offset">
+              <input type="number" id="offset" class="offset_input" value="1">
+            </div>
+            <div>
+              <button type="button" name="encode-button" id="encode-button" class="form-buttons buttons">Codificar</button>
+              <button type="button" name="decode-button" id="decode-button" class="form-buttons buttons">Decodificar</button>
+            </div>
           </section>
       </form>
-      <div class="">
-        <a class="button_help" href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria">ESCONDER</a>
+      <div>
+        <a class="button-help buttons" href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria">ESCONDER</a>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <p>Aline Camargo - Laboratória 2019</p>
     </footer>
     <script src="cipher.js"></script>
