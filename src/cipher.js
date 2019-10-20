@@ -1,8 +1,8 @@
 // Cifra mensagem c/ offset
 const encode = (offset, message) => {
   let answerEncode = "";
-  for (let char of message) {
-    const entryCharCode = message.charCodeAt(message.indexOf(char));
+  for (let char of message) {    
+    const entryCharCode = message.charCodeAt(message.indexOf(char)); 
     const isLowerCase = entryCharCode >= 97 && entryCharCode <= 122;
     const isUpperCase = entryCharCode >= 65 && entryCharCode <= 90;
     if (isLowerCase) {
@@ -40,6 +40,6 @@ const decode = (offset, message) => {
 };
 
 window.cipher = {
-  encode: encode,
-  decode: decode,
+  encode,
+  decode,
 };
