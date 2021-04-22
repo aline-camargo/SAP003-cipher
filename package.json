@@ -6,9 +6,8 @@
   "scripts": {
     "eslint": "eslint --ext .js src/ test/ ",
     "pretest": "npm run eslint",
-    "test-browser": "opener ./test/index.html",
     "test-node": "nyc mocha ./test/headless.js",
-    "test": "npm run test-node --silent && npm run test-browser",
+    "test": "npm run test-node --silent",
     "start": "serve ./src"
   },
   "dependencies": {
@@ -16,7 +15,6 @@
     "eslint": "^7.24.0",
     "mocha": "^8.3.2",
     "nyc": "^15.1.0",
-    "opener": "^1.5.2",
     "serve": "^11.3.2"
   }
 }
